@@ -1,0 +1,25 @@
+<!-- determines the type of document rendered by the browser -->
+<!-- HTML 5 is the language -->
+<!DOCTYPE html>
+<!-- opens HTML tag -->
+<html>
+  <!-- opens the head of the document -->
+  <head>
+    <!-- determines the character set of the document (is nonessential) -->
+    <meta charset="utf-8">
+    <!-- name of the tab -->
+    <title>My first web page</title>
+    <link href="css/myStyle.css" rel="stylesheet"> 
+  <!-- closes the head tag -->
+  </head>
+  <!-- opens the body of the document, this is the stuff you actually see (not entirely true) -->
+  <body onload="draw()">
+    <canvas id="canvas" width="150" height="150"></canvas>
+    <h1>My first webpage</h1>
+    <!-- this is a pragraph tag (can write paragraphs with this) -->
+    <p>Hello world...</p>
+      <!-- making the image a clickable link when you open the webpage -->
+      <a href="https://bcp.org"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHBwBTfB0c-Xdk7USXvGDQ3kwfpQfUNrCaZg&usqp=CAU" alt="My test image"></a>
+    <script src="js/myFirstJavascript.js"></script>
+  </body>
+</html>
