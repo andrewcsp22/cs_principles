@@ -18,12 +18,15 @@
             console.log(Human.Name);
 
             // welcome to constructors...
+            // done with this for the most part
             function dog(name, age){
                 this.name = name;
                 this.age = age;
             }
 
             // this is a class
+            // use this more than constructors (just make more sense)
+            // makes writing methods much easier
             class Dog{
             constructor(name, age){
                 this.name = name;
@@ -32,6 +35,7 @@
                 this.y = y;
                 this.w = w;
                 this.h = h;
+                // this is a method
                 }
                 bark(){
                     console.log("WOOOOOF");
@@ -56,13 +60,20 @@
             console.log(yourDog.name);
             console.log(yourDog.age);
 
-            let myDog = new dog("Doofus", 2);
-            let yourDog = new Dog("Roofus", 4);
-            yourDog.bark();
-            console.log(myDog.name);
-            console.log(myDog.age);
-            console.log(yourDog.name);
-            console.log(yourDog.age);
+            function snake(name, age){
+                this.name = name;
+                this.age = age
+            }
+
+            class snake{
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+                }
+            }
+            let mySnake = new snake("Sammy", 7);
+                console.log(mySnake.name);
+                console.log(mySnake.age)
 
             function input() {
                 // selecting the input element and  returns its value
@@ -86,4 +97,4 @@
       <p>Output:</p>
       <p id="display1">Output will replace this...</p>
 </body>
-<html>
+</html>
